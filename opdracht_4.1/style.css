@@ -34,9 +34,8 @@ a{
 header{
     width: 100vw;
     height: 33.33vh;
-    background-image: url("/opdracht_4.1/img/videogamesreleasecalendar2022.jpg");
+    background-image: url("img/pic0-3140504525.png");
     background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
 }
 article{
