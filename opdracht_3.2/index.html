@@ -6,32 +6,95 @@
     <title>Document</title>
 </head>
 <body>
+<h1>book uw vankantie land</h1>
+
     <form action="results.html" method="GET">
         <div>
-        <label>name</label>
-<input type="text" name="name" id="name" placeholder="username"
+        <label>Voornaam</label>
+<input type="text" name="name" id="name" placeholder="voornaam"
 required>
 </div>
 <div>
-    <label for="email">Email</label>
+    <label>Achternaam</label>
+<input type="text" name="name" id="name" placeholder="achternaam"
+required>
+</div>
+<div>
+    <label for="">Geslacht</label>
+    <select name="geslacht" id="bent u zwanger">
+        <option value="man">man</option>
+        <option label="vrouw" value="vrouw"></option>
+    </select>
+</div>
+<div>
+    <label><address>Straat met huisnummer</label>
+<input type="name" name="adres en huisnummer" id="adres en huisnummer" required>
+</div>
+<div>
+    <label>Postcode</label>
+<input type="text" name="postcode" id="postcode"
+required>
+</div>
+<div>
+    <label><address>Stad</label>
+<input type="name" name="city" id="stad" required>
+</div>
+<div>
+    <label for="">land</label>
+    <select name="geslacht" id="bent u zwanger">
+        <option value="nederland">nederland</option>
+        <option label="dunhoven" value="dunhoven"></option>
+        <option label="syria" value="syria"></option>
+        <option label="iraq" value="iraq"></option>
+        <option label="noordpol" value="noordpol"></option>
+        <option label="mars" value="mars"></option>
+    </select>
+</div>
+<div>
+    <label for="age">BSN Nummer</label>
+    <input type="number" name="bsn" id="bsn" min="1" max="999999999">
+</div>
+<div>
+    <label for="">Vakantieland</label>
+    <select name="geslacht" id="bent u zwanger">
+        <option value="afghanistan">afghanistan</option>
+        <option label="palastine" value="palastine"></option>
+        <option label="syria" value="syria"></option>
+        <option label="iraq" value="iraq"></option>
+        <option label="noordpol" value="noordpol"></option>
+        <option label="mars" value="mars"></option>
+    </select>
+</div>
+<div>
+    <label for="date">Datum van vetrek</label>
+    <input type="date" name="date" id="date">
+</div>
+
+<script>
+    const today = new Date().toISOString().split("T")[0];
+    document.getElementById("date").setAttribute("min", today);
+</script>
+
+<div>
+    <label for="terugkomst">Datum van terugkomst</label>
+    <input type="date" name="terugkomst" id="terugkomst">
+</div>
+<div>
+    <label for="age">Aantal reisgenoten (max 4)</label>
+    <input type="number" name="aantal" id="anntal" min="1" max="4">
+</div>
+
+<div>
+    <label for="email">E-mail</label>
     <input type="email" name="email" id="email" required>
 </div>
 <div>
-    <label for="age">Leeftijd</label>
-    <input type="number" name="age" id="age" min="1" max="200">
-</div>
-<div>
-    <label for="date">geboortedatum</label>
-    <input type="date" name="date" id="date">
-</div>
-<div>
 <label>
-    password
+    wachtwoord
 <input type="password" name="password" required>
 </label>
 </div>
-<button type="reset">reset</button>
-<button type="submit">book</button>
+<button type="submit">Book nu</button>
 
     </form>
 </body>
